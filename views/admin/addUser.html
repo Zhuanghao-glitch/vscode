@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../static/pkg/popper/popper.min.js">
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <link rel="stylesheet" href="../../static/pkg/bootstrap-4.6.2-dist/css/bootstrap.min.css">
+    <script src="../../static/pkg/bootstrap-4.6.2-dist/js/bootstrap.min.js"></script>
+    <script src="../../static/pkg/jquery-3.7.1/jquery-3.7.1.min.js"></script>
+    <style>
+        .login{
+            width: 23rem; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card login">
+            <div class="card-body">
+                <form action="../../controllers/addUser.php" method="post">
+                    <h3>添加用户</h3>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">用户名</label>
+                        <input type="text" class="form-control" name="username" aria-describedby="emailHelp">
+                        <small id="emailHelp" class="form-text text-muted"></small>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">工号</label>
+                        <input type="number" class="form-control" name="workNo">
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">添加</button>
+                </form>
+            </div>
+          </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+body{
+    background-image: url("./半天使.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.loginCard{
+    width: fit-content;
+    padding: 20px 40px;
+    margin: 200px auto;
+    border-radius: 7px;
+    box-shadow: 1px 1px 10px 1px #000000;
+    background-color: rgb(242, 245, 248,0.8);
+}
+
+.loginCard .logo{
+    margin: 0 auto;
+    transform: translateY(-60px);
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 10px 1px #000000;
+}
+
+.loginCard .logo img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+#nav{
+    width: 100%;
+}
